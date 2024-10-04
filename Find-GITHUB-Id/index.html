@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Find-User-id</title>
+  </head>
+  <body>
+    <h1>Find GitHub User id</h1>
+
+    <form id="form">
+      <input type="text" placeholder="Enter GitHub username"  required/>
+      <button type="submit">Get Data</button>
+    </form>
+
+    <p id="message"></p>
+
+    <div id="main-div">
+      <img src="" alt="Profile Picture" />
+      <p id="name" class="name"></p>
+      <p id="repos" class="repos">Public repos: 0</p>
+      <a id="profile-link" href="#" target="_blank">Profile link</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
